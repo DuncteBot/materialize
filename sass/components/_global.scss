@@ -529,6 +529,10 @@ td, th{
     margin: 0;
     border-bottom: 1px solid $collection-border-color;
 
+    &:nth-child(even) {
+      background-color: $collection-bg-even-color;
+    }
+
     // Avatar Collection
     &.avatar {
       min-height: 84px;

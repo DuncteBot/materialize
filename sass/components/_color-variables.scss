@@ -330,6 +330,14 @@ $shades: (
   "transparent":  transparent
 );
 
+$discord: (
+  "blurple":        #7289DA,
+  "full-white":     #FFFFFF,
+  "greyple":        #99AAB5,
+  "dark-not-black": #2C2F33,
+  "not-black":      #23272A
+);
+
 $colors: (
   "materialize-red": $materialize-red,
   "red": $red,
@@ -351,7 +359,8 @@ $colors: (
   "brown": $brown,
   "blue-grey": $blue-grey,
   "grey": $grey,
-  "shades": $shades
+  "shades": $shades,
+  "discord": $discord
 ) !default;
 
 
