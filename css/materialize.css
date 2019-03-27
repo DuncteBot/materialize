@@ -1612,6 +1612,12 @@
 .discord-text.text-not-black {
   color: #23272A !important; }
 
+.discord.body {
+  background-color: #36393f !important; }
+
+.discord-text.text-body {
+  color: #36393f !important; }
+
 .black {
   background-color: #000000 !important; }
 
@@ -2151,6 +2157,7 @@ video.responsive-video {
       overflow: hidden;
       white-space: nowrap; } }
 .breadcrumb {
+  display: inline-block;
   font-size: 18px;
   color: rgba(255, 255, 255, 0.7); }
   .breadcrumb i,
@@ -2169,7 +2176,8 @@ video.responsive-video {
     font-style: normal;
     font-size: 25px;
     margin: 0 10px 0 8px;
-    -webkit-font-smoothing: antialiased; }
+    -webkit-font-smoothing: antialiased;
+    float: left; }
   .breadcrumb:first-child:before {
     display: none; }
   .breadcrumb:last-child {
