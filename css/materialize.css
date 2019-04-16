@@ -5498,7 +5498,7 @@ input[type=range]::-ms-thumb {
     float: none;
     line-height: 48px; }
     .sidenav li.active {
-      background-color: rgba(0, 0, 0, 0.05); }
+      background-color: rgba(0, 0, 0, 0.2); }
   .sidenav li > a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-flat):not(.btn-floating) {
     color: rgba(0, 0, 0, 0.87);
     display: block;
