@@ -121,8 +121,10 @@ $carousel-item-width: $carousel-item-height !default;
 
 $collapsible-height: 3rem !default;
 $collapsible-line-height: $collapsible-height !default;
-$collapsible-header-color: #fff !default;
-$collapsible-border-color: #ddd !default;
+//$collapsible-header-color: #fff !default;
+$collapsible-header-color: color("discord", "dark-not-black") !default;
+//$collapsible-border-color: #ddd !default;
+$collapsible-border-color: color("discord", "not-black") !default;
 
 
 // 7. Chips

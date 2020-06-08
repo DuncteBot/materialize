@@ -1,3 +1,5 @@
+const sass = require('node-sass');
+
 module.exports = function(grunt) {
   let concatFile = 'temp/js/materialize_concat.js.map';
 
@@ -27,6 +29,7 @@ module.exports = function(grunt) {
       expanded: {
         // Target options
         options: {
+          implementation: sass,
           outputStyle: 'expanded',
           sourcemap: false
         },
@@ -37,6 +40,7 @@ module.exports = function(grunt) {
 
       min: {
         options: {
+          implementation: sass,
           outputStyle: 'compressed',
           sourcemap: false
         },
@@ -48,6 +52,7 @@ module.exports = function(grunt) {
       // Compile ghpages css
       gh: {
         options: {
+          implementation: sass,
           outputStyle: 'compressed',
           sourcemap: false
         },
@@ -59,6 +64,7 @@ module.exports = function(grunt) {
       // Compile bin css
       bin: {
         options: {
+          implementation: sass,
           outputStyle: 'expanded',
           sourcemap: false
         },
@@ -650,6 +656,18 @@ module.exports = function(grunt) {
     'replace:readme',
     'rename:rename_src',
     'rename:rename_compiled',
+    'clean:temp'
+  ]);
+
+  grunt.registerTask('release:db', [
+    'sass:expanded',
+    'sass:min',
+    'postcss:expanded',
+    'postcss:min',
+    'concat:dist',
+    'babel:dist',
+    'uglify:dist',
+    'uglify:extras',
     'clean:temp'
   ]);
 
